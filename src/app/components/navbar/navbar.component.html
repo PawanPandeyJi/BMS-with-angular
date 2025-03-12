@@ -1,1 +1,7 @@
-<p>navbar works!</p>
+<nav class="bg-slate-500 h-16 p-5 flex justify-between items-center">
+    <h1 class="text-4xl text-white">BMS</h1>
+    <div class="text-xl flex gap-5">
+        <a routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Add Books</a>
+        <a routerLink="bmsList"  routerLinkActive="active">Book List</a>
+    </div>
+</nav>
