@@ -1,0 +1,29 @@
+form>label {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+}
+
+form>label>input {
+    width: 100%;
+    border: 1px solid rgb(189, 189, 189);
+    padding: 0.4rem;
+}
+
+.same-col {
+    display: flex;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+.same-col>label {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.same-col>label>input {
+    width: 100%;
+    border: 1px solid rgb(189, 189, 189);
+    padding: 0.4rem;
+}

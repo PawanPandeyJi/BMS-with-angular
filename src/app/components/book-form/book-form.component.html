@@ -1,18 +1,76 @@
-<div class="h-full w-full flex ">
-    <div class="w-2/5 h-full flex justify-center items-center">
-        <img src="assets/images/Forms-bro.png" alt="boy-with-form">
-    </div>
-    <div class="w-3/5 h-full p-2 border flex flex-col items-center">
-        <h1 class="text-4xl text-center">Add Books:-</h1>
-        <form class="w-11/12 h-full border border-red-500 border-solid">
-            <label for="title">Title :-</label>
-            <input type="text" id="title" placeholder="Title" name="title" value="">
-            <label for="title">Title :-</label>
-            <input type="text" id="title" placeholder="Title" name="title" value="">
-            <label for="title">Title :-</label>
-            <input type="text" id="title" placeholder="Title" name="title" value="">
-            <label for="title">Title :-</label>
-            <input type="text" id="title" placeholder="Title" name="title" value="">
-        </form>
-    </div>
+<div class="h-full w-full flex">
+  <div class="w-2/5 h-full flex justify-center items-center">
+    <img src="assets/images/Forms-bro.png" alt="boy-with-form" />
+  </div>
+  <div class="w-3/5 h-full p-2 border flex flex-col items-center gap-3">
+    <h1 class="text-4xl text-center">Add Books:-</h1>
+    <form class="w-11/12 p-3 h-full flex flex-col gap-3" (submit)="handleSubmit($event)">
+      <label for="title"
+        >Title :-
+        <input
+          type="text"
+          id="title"
+          placeholder="Title"
+          name="title"
+          value=""
+        />
+        <label class="text-red-600">*</label>
+      </label>
+
+      <label for="author"
+        >Author :-
+        <input
+          type="text"
+          id="author"
+          placeholder="Author"
+          name="author"
+          value=""
+        />
+        <label class="text-red-600">*</label>
+      </label>
+      <div class="same-col">
+        <label for="ISBN"
+          >ISBN :-
+          <input
+            type="number"
+            id="ISBN"
+            placeholder="ISBN"
+            name="ISBN"
+            value=""
+          />
+          <label class="text-red-600">*</label>
+        </label>
+
+        <label for="publicationDate"
+          >Publication Date :-
+          <input
+            type="text"
+            id="publicationDate"
+            placeholder="Publication Date"
+            name="publicationDate"
+            value=""
+          />
+          <label class="text-red-600">*</label>
+        </label>
+      </div>
+
+      <label for="genre"
+        >Genre :-
+        <input
+          type="text"
+          id="genre"
+          placeholder="Genre"
+          name="genre"
+          value=""
+        />
+        <label class="text-red-600">*</label>
+      </label>
+      <button
+        class="border self-center px-3 py-2 border-green-700 hover:bg-green-700 hover:text-white border-solid"
+        type="submit"
+      >
+        Add Book
+      </button>
+    </form>
+  </div>
 </div>
